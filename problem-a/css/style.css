@@ -1,0 +1,21 @@
+body {
+    font-size: 16px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+p {
+    line-height: 1.5;
+}
+
+li.highlight {
+    color: rgb(255, 0, 157);
+}
+
+img {
+    max-height: 400px; 
+}
+

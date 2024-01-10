@@ -1,0 +1,45 @@
+phoeberomangsuriat@Phoebes-MacBook-Pro problem-set-01-phoebemromangsuriat % jest problem-a
+ FAIL  problem-a/problem.spec.js
+  Used test-driven development
+    ✕ Used Jest to pre-test code, saved in `pretest.txt` (1 ms)
+  Source code is valid
+    ✓ HTML validates without errors (5 ms)
+    ✓ CSS validates without errors (71 ms)
+  Has required HTML
+    ✓ Specifies charset (1 ms)
+    ✓ Includes page title (1 ms)
+    ✓ Includes author metadata (1 ms)
+    ✓ Has a top-level heading
+    ✓ Has an image
+    ✓ Includes a paragraph
+    ✓ Includes a hyperlink in the paragraph
+    ✓ Includes a list
+    ✓ List has at least 3 items (1 ms)
+  Has required CSS
+    ✓ Links in local stylesheet
+    ✓ Body has default font size (1 ms)
+    ✓ Body has default font family
+    ✓ Paragraphs have specified line height
+    ✓ Images have constrained height
+    ✓ Important list item is colored
+
+  ● Used test-driven development › Used Jest to pre-test code, saved in `pretest.txt`
+
+    ENOENT: no such file or directory, open '/Users/phoeberomangsuriat/Desktop/problem-set-01-phoebemromangsuriat/problem-a/pretest.txt'
+
+      17 |   test('Used Jest to pre-test code, saved in `pretest.txt`', () => {
+      18 |     const path = __dirname + '/pretest.txt'
+    > 19 |     const pretest = fs.readFileSync(path, 'utf-8');
+         |                        ^
+      20 |     expect(pretest).toMatch(/FAIL +(problem-a)?\/problem\.spec\.js/)
+      21 |   })
+      22 | })
+
+      at Object.readFileSync (problem-a/problem.spec.js:19:24)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 17 passed, 18 total
+Snapshots:   0 total
+Time:        0.633 s, estimated 1 s
+Ran all test suites matching /problem-a/i.
+phoeberomangsuriat@Phoebes-MacBook-Pro problem-set-01-phoebemromangsuriat % 
